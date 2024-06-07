@@ -8,7 +8,7 @@
               <h3 class="title">工厂车间管理系统的设计与实登录</h3>
             </div>
           <el-form-item :style='{"padding":"0","boxShadow":"0 0 6px rgba(0,0,0,0)","margin":"0 0 12px 0","borderColor":"rgba(0,0,0,0)","backgroundColor":"rgba(0,0,0,0)","borderRadius":"0","borderWidth":"0","width":"100%","borderStyle":"solid","height":"auto"}' :label="2 == 3 ? '用户名' : ''" :class="'style'+2">
-            <span v-if="2 != 3" class="svg-container" style="
+            <span v-if="2 !== 3" class="svg-container" style="
                 color:#333;
                 line-height:30px;
                 font-size:14px;
@@ -23,7 +23,7 @@
             <el-input placeholder="请输入用户名" name="username" type="text" v-model="rulesForm.username" />
           </el-form-item>
           <el-form-item :style='{"padding":"0","boxShadow":"0 0 6px rgba(0,0,0,0)","margin":"0 0 12px 0","borderColor":"rgba(0,0,0,0)","backgroundColor":"rgba(0,0,0,0)","borderRadius":"0","borderWidth":"0","width":"100%","borderStyle":"solid","height":"auto"}' :label="2 == 3 ? '密码' : ''" :class="'style'+2">
-            <span v-if="2 != 3" class="svg-container" style="color:#333;
+            <span v-if="2 !== 3" class="svg-container" style="color:#333;
                 line-height:30px;
                 font-size:14px;
                 width:30px;
@@ -38,7 +38,7 @@
           <el-form-item label="职位：" prop="loginInRole" class="role" style="display: flex;align-items: center;">
             <el-radio
               v-for="item in menus"
-	             v-if="item.hasBackLogin=='是'"
+	             v-if="item.hasBackLogin==='是'"
               v-bind:key="item.roleName"
               v-model="rulesForm.role"
               :label="item.roleName"
@@ -46,7 +46,7 @@
           </el-form-item>
           <el-button type="primary" @click="login()" class="loginInBt">{{'1' == '1' ? '登录' : 'login'}}</el-button>
           <el-form-item class="setting">
-            <div class="register" @click="register('renyuan')">注册人员</div>
+            <div class="register" @click="register('renyuan')">注册</div>
             <!-- <div style="color:${template2.back.login.loginInSettingFontColor}" class="reset">修改密码</div> -->
           </el-form-item>
         </el-form>
@@ -106,7 +106,7 @@ export default {
       this.$storage.set("loginTable", tableName);
       this.$router.push({path:'/register'})
     },
-    // 登陆
+   // 登陆
     login() {
       if (!this.rulesForm.username) {
          this.$message.error("请输入用户名");
@@ -188,7 +188,7 @@ export default {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-      background-image: url(../assets/img/1.jpg);
+      background-image: url(../assets/img/bg.jpg);
     
 
   .loginInBt {
@@ -271,7 +271,6 @@ export default {
 
       .title {
         width: 90%;
-        line-height: auto;
         margin: 30px auto 30px;
         padding: 0;
         color: rgba(0, 0, 0, 1);
