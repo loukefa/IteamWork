@@ -1,19 +1,6 @@
 <template>
-	<!-- <el-header>
-		<el-menu background-color="#00c292" text-color="#FFFFFF" active-text-color="#FFFFFF" mode="horizontal">
-			<div class="fl title">{{this.$project.projectName}}</div>
-			<div class="fr logout" style="display:flex;">
-				<el-menu-item index="3">
-					<div>{{this.$storage.get('role')}} {{this.$storage.get('adminName')}}</div>
-				</el-menu-item>
-				<el-menu-item @click="onLogout" index="2">
-					<div>退出登录</div>
-				</el-menu-item>
-			</div>
-		</el-menu>
-	</el-header> -->
 	<div class="navbar" :style="{background:heads.headBgColor,height:heads.headHeight,boxShadow:heads.headBoxShadow,lineHeight:heads.headHeight}">
-		<div class="title-menu" :style="{justifyContent:heads.headTitleStyle=='1'?'flex-start':'center'}">
+		<div class="title-menu" :style="{justifyContent:heads.headTitleStyle==='1'?'flex-start':'center'}">
 			<el-image v-if="heads.headTitleImg" class="title-img" :style="{width:heads.headTitleImgWidth,height:heads.headTitleImgHeight,boxShadow:heads.headTitleImgBoxShadow,borderRadius:heads.headTitleImgBorderRadius}" :src="heads.headTitleImgUrl" fit="cover"></el-image>
 			<div class="title-name" :style="{color:heads.headFontColor,fontSize:heads.headFontSize}">{{this.$project.projectName}}</div>
 		</div>
@@ -31,7 +18,23 @@
 				dialogVisible: false,
 				ruleForm: {},
 				user: {},
-				heads: {"headLogoutFontHoverColor":"#fff","headFontSize":"24px","headUserInfoFontColor":"rgba(255, 255, 255, 1)","headBoxShadow":"0 1px 6px #444","headTitleImgHeight":"44px","headLogoutFontHoverBgColor":"rgba(186, 180, 180, 0.59)","headFontColor":"rgba(255, 255, 255, 1)","headTitleImg":false,"headHeight":"80px","headTitleImgBorderRadius":"22px","headTitleImgUrl":"http://codegen.caihongy.cn/20201021/cc7d45d9c8164b58b18351764eba9be1.jpg","headBgColor":"#fff url(\"http://codegen.caihongy.cn/20220121/83c7efc87e874f05871d6a82e0c6abbf.png\") repeat top","headTitleImgBoxShadow":"0 1px 6px #444","headLogoutFontColor":"rgba(238, 238, 238, 1)","headUserInfoFontSize":"16px","headTitleImgWidth":"44px","headTitleStyle":"2","headLogoutFontSize":"16px"},
+				heads: {"headLogoutFontHoverColor":"red",
+          "headFontSize":"24px",
+          "headUserInfoFontColor":"black",
+          "headBoxShadow":"0 1px 6px #444",
+          "headTitleImgHeight":"44px",
+          "headLogoutFontHoverBgColor":"#F2F6FC",
+          "headFontColor":"black",
+          "headTitleImg":false,"headHeight":"80px",
+          "headTitleImgBorderRadius":"22px",
+          "headTitleImgUrl":"../assets/img/bg.jpg",
+          "headBgColor":"#F2F6FC",
+          "headTitleImgBoxShadow":"0 1px 6px #444",
+          "headLogoutFontColor":"black",
+          "headUserInfoFontSize":"16px",
+          "headTitleImgWidth":"44px",
+          "headTitleStyle":"2",
+          "headLogoutFontSize":"16px"},
 			};
 		},
 		created() {
@@ -94,7 +97,7 @@
 		width: 100%;
 		padding: 0 34px;
 		box-sizing: border-box;
-		background-color: #ff00ff;
+		background-color: #409EFF;
 		position: relative;
 		z-index: 111;
 		
@@ -145,40 +148,4 @@
 			}
 		}
 	}
-	// .el-header .fr {
-	// 	float: right;
-	// }
-
-	// .el-header .fl {
-	// 	float: left;
-	// }
-
-	// .el-header {
-	// 	width: 100%;
-	// 	color: #333;
-	// 	text-align: center;
-	// 	line-height: 60px;
-	// 	padding: 0;
-	// 	z-index: 99;
-	// }
-
-	// .logo {
-	// 	width: 60px;
-	// 	height: 60px;
-	// 	margin-left: 70px;
-	// }
-
-	// .avator {
-	// 	width: 40px;
-	// 	height: 40px;
-	// 	background: #ffffff;
-	// 	border-radius: 50%;
-	// }
-
-	// .title {
-	// 	color: #ffffff;
-	// 	font-size: 20px;
-	// 	font-weight: bold;
-	// 	margin-left: 20px;
-	// }
 </style>

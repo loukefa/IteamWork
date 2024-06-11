@@ -195,7 +195,7 @@ export default {
     width: 150px;
     height: 50px;
     line-height: 50px;
-    margin: 0px 150px;
+    margin: 0 150px;
     padding: 0;
     color: rgba(255, 255, 255, 1);
     font-size: 24px;
@@ -204,7 +204,7 @@ export default {
     border-style: solid;
     border-color: rgba(171, 214, 229, 1);
     background-color: rgba(156, 155, 92, 1);
-    box-shadow: 0px 0px 0px 5px #ABD6E5;
+    box-shadow: 0 0 0 5px #ABD6E5;
   }
   .register {
     width: auto;

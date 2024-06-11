@@ -19,7 +19,7 @@ import center from '@/views/center'
     import shebeixinxi from '@/views/modules/shebeixinxi/list'
 
 
-//2.配置路由   注意：名字
+//2.配置路由
 const routes = [{
     path: '/index',
     name: '首页',

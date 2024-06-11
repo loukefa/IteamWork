@@ -1,9 +1,7 @@
 <template>
 			<el-main style="padding: 10px;
-						background: #fff;
-				boxShadow: 0 0 6px rgba(0,0,0,0);
-                height:calc(100% - ${template2.back.menulist.menulistHeight});
-        		">
+						background: #fff;boxShadow: 0 0 6px rgba(0,0,0,0);
+            height:calc(100% - ${template2.back.menulist.menulistHeight});">
     		<bread-crumbs :title="title" class="bread-crumbs"></bread-crumbs>
 		<router-view class="router-view" style="height:auto;background: transparent;"></router-view>
 	</el-main>

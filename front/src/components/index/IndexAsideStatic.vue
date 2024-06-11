@@ -1,8 +1,8 @@
 <template>
   <el-aside class="index-aside" width="200px">
     <div class="index-aside-inner menulist">
-      <div v-for="item in menuList" :key="item.roleName" v-if="role==item.roleName" class="menulist-item">
-        <div class="menulistImg" v-if="false && 2 == 2">
+      <div v-for="item in menuList" :key="item.roleName" v-if="role===item.roleName" class="menulist-item">
+        <div class="menulistImg" v-if="false && 2 === 2">
           <el-image :style='{"padding":"0","boxShadow":"0 0 6px rgba(0,0,0,0)","margin":"0","borderColor":"rgba(0,0,0,0)","borderRadius":"0","borderWidth":"0","width":"100%","borderStyle":"solid","height":"auto"}' v-if="'http://codegen.caihongy.cn/20201021/cc7d45d9c8164b58b18351764eba9be1.jpg'" src="http://codegen.caihongy.cn/20201021/cc7d45d9c8164b58b18351764eba9be1.jpg" fit="cover" />
         </div>
 		<el-menu :mode="2 == 1? 'horizontal':'vertical'" :unique-opened="true" class="el-menu-demo" default-active="0">
@@ -278,9 +278,9 @@ export default {
 		border-radius: 0;
 		border-width: 0 !important;
 		border-style: solid !important;
-		border-color: rgba(0,0,0,.3) !important;
-		background: #add7e6 !important;
-		box-shadow: 0 0 6px rgba(30, 144, 255, .2);
+		border-color: white;
+		background: #D4D7DE !important;
+		box-shadow: 0 0 6px ;
 		box-sizing: border-box;
 	}
 			.el-menu-demo {
@@ -293,14 +293,14 @@ export default {
 			line-height: 35px !important;
 			padding: 0 10px;
 			margin: 20px 0;
-			color: rgba(255, 255, 255, 1);
+			color: black;
 			font-size: 14px;
 			border-radius: 8px;
 			border-width: 1px;
 			border-style: solid;
-			border-color: rgba(0, 0, 0, 1) !important;
-			background-color: rgba(173, 215, 230, 1) !important;
-			box-shadow: 0px 8px 0px 0px rgba(0,0,0,1);
+			border-color: white !important;
+			background-color: #EBEEF5 !important;
+			box-shadow: 0px 8px 0px 0px #EBEEF5;
 			box-sizing: initial;
 			display: flex;
 			align-items: center;
@@ -332,14 +332,14 @@ export default {
 			height: auto !important;
 			line-height: 35px !important;
 			padding: 0 10px;
-			color: rgba(255, 255, 255, 1);
+			color: black;
 			font-size: 14px;
 			border-radius: 8px;
 			border-width: 1px;
 			border-style: solid;
-			border-color: rgba(0, 0, 0, 1) !important;
-			background-color: rgba(173, 215, 230, 1) !important;
-			box-shadow: 0px 8px 0px 0px rgba(0,0,0,1);
+			border-color: white !important;
+			background-color: #EBEEF5 !important;
+			box-shadow: 0px 8px 0px 0px white;
 			box-sizing: initial;
 			display: flex;
 			align-items: center;
@@ -391,7 +391,6 @@ export default {
 			border-radius: 4px;
 			border-width: 1px 1px 0 1px;
 			border-style: solid;
-			border-color: rgba(0, 0, 0, 1);
 			background-color: #fff;
 			box-shadow: 0 0 6px rgba(0, 0, 0, .3);
 			
@@ -404,9 +403,9 @@ export default {
 				color: #000 !important;
 				font-size: 14px;
 				border-radius: 0;
-				border-width: 0 0 1px 0 ;
+				border-width: 1px;
 				border-style: solid;
-				border-color: rgba(0, 0, 0, 1);
+        border-color: #E4E7ED;
 				background-color: #fff !important;
 				box-shadow: 0 0 6px rgba(30, 144, 255, 0);
 				text-align: center;
@@ -460,7 +459,7 @@ export default {
 		border-radius: 4px;
 		border-width: 1px 1px 0 1px;
 		border-style: solid;
-		border-color: rgba(0, 0, 0, 1);
+		border-color: white;
 		background-color: #fff;
 		box-shadow: 0 0 6px rgba(0, 0, 0, .3);
 		min-width: auto;

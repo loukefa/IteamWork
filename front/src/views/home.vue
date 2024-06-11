@@ -1,6 +1,6 @@
 <template>
 <div class="content">
-			<div class="text main-text" :style='{"padding":"0","boxShadow":"0 0 0px rgba(0,0,0,.1)","margin":"20% auto 0","borderColor":"rgba(0,0,0,.3)","backgroundColor":"rgba(247, 247, 247, 0)","color":"#333","borderRadius":"6px","borderWidth":"0","width":"auto","lineHeight":"auto","fontSize":"50px","borderStyle":"solid"}'>欢迎使用 {{this.$project.projectName}}</div>
+			<div class="text main-text">欢迎使用 {{this.$project.projectName}}</div>
 	</div>
 </template>
 <script>
@@ -21,7 +21,7 @@ export default {
             url: `${this.$storage.get('sessionTable')}/session`,
             method: "get"
         }).then(({ data }) => {
-            if (data && data.code != 0) {
+            if (data && data.code !== 0) {
             router.push({ name: 'login' })
             }
         });
