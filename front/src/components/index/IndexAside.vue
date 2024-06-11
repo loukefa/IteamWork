@@ -2,10 +2,7 @@
   <el-aside class="index-aside" width="200px">
     <div class="index-aside-inner">
       <el-menu default-active="1">
-        <el-menu-item @click="menuHandler('/')" index="1">
-          <!-- <i class="el-icon-s-home"></i> -->
-          首页
-        </el-menu-item>
+        <el-menu-item @click="menuHandler('/')" index="1">首页</el-menu-item>
         <sub-menu
           v-for="menu in menuList"
           :key="menu.menuId"

@@ -4,21 +4,11 @@
       <div class="login-form">
         <h1 class="h1">工厂车间管理系统的设计与实注册</h1>
 		<el-form ref="rgsForm" class="rgs-form" :model="rgsForm">
-			<!-- <div v-if="tableName=='renyuan'" class="input-group">
-			   <div class="label">账号</div>
-			   <div class="input-container">
-			     <input v-model="ruleForm.zhanghao" class="input" type="text" placeholder="账号">
-			   </div>
-			 </div> -->
+
 			<el-form-item label="账号" class="input" v-if="tableName=='renyuan'">
 			  <el-input v-model="ruleForm.zhanghao" autocomplete="off" placeholder="账号"  />
 			</el-form-item>
-			<!-- <div v-if="tableName=='renyuan'" class="input-group">
-			   <div class="label">密码</div>
-			   <div class="input-container">
-			     <input v-model="ruleForm.mima" class="input" type="text" placeholder="密码">
-			   </div>
-			 </div> -->
+
 			<el-form-item label="密码" class="input" v-if="tableName=='renyuan'">
 			  <el-input v-model="ruleForm.mima" autocomplete="off" placeholder="密码" type="password"#elsetype="text" />
 			</el-form-item>
@@ -26,39 +16,18 @@
 			  <el-input v-model="ruleForm.mima2" autocomplete="off" placeholder="确认密码" type="password"/>
 			</el-form-item>
 
-			<!-- <div v-if="tableName=='renyuan'" class="input-group">
-			   <div class="label">姓名</div>
-			   <div class="input-container">
-			     <input v-model="ruleForm.xingming" class="input" type="text" placeholder="姓名">
-			   </div>
-			 </div> -->
 			<el-form-item label="姓名" class="input" v-if="tableName=='renyuan'">
 			  <el-input v-model="ruleForm.xingming" autocomplete="off" placeholder="姓名"  />
 			</el-form-item>
-			<!-- <div v-if="tableName=='renyuan'" class="input-group">
-			   <div class="label">邮箱</div>
-			   <div class="input-container">
-			     <input v-model="ruleForm.youxiang" class="input" type="text" placeholder="邮箱">
-			   </div>
-			 </div> -->
+
 			<el-form-item label="邮箱" class="input" v-if="tableName=='renyuan'">
 			  <el-input v-model="ruleForm.youxiang" autocomplete="off" placeholder="邮箱"  />
 			</el-form-item>
-			<!-- <div v-if="tableName=='renyuan'" class="input-group">
-			   <div class="label">手机</div>
-			   <div class="input-container">
-			     <input v-model="ruleForm.shouji" class="input" type="text" placeholder="手机">
-			   </div>
-			 </div> -->
+
 			<el-form-item label="手机" class="input" v-if="tableName=='renyuan'">
 			  <el-input v-model="ruleForm.shouji" autocomplete="off" placeholder="手机"  />
 			</el-form-item>
-			<!-- <div v-if="tableName=='renyuan'" class="input-group">
-			   <div class="label">人员类型</div>
-			   <div class="input-container">
-			     <input v-model="ruleForm.renyuanleixing" class="input" type="text" placeholder="人员类型">
-			   </div>
-			 </div> -->
+
 			<el-form-item label="人员类型" class="input" v-if="tableName=='renyuan'">
 			  <el-input v-model="ruleForm.renyuanleixing" autocomplete="off" placeholder="人员类型"  />
 			</el-form-item>
@@ -68,11 +37,7 @@
 			</div>
 		</el-form>
       </div>
-      <!-- <div class="nk-navigation">
-        <a href="#">
-          <div @click="login()">注册</div>
-        </a>
-      </div> -->
+
     </div>
   </div>
 </template>
@@ -185,86 +150,12 @@ export default {
 		margin: 0;
 	}
 
-	// .container {
- //    min-height: 100vh;
- //    text-align: center;
- //    // background-color: #00c292;
- //    padding-top: 20vh;
- //    background-image: url(../assets/img/bg.jpg);
- //    background-size: 100% 100%;
- //    opacity: 0.9;
- //  }
-
-	// .login-form:before {
-	// 	vertical-align: middle;
-	// 	display: inline-block;
-	// }
-
-	// .login-form {
-	// 	max-width: 500px;
-	// 	padding: 20px 0;
-	// 	width: 80%;
-	// 	position: relative;
-	// 	margin: 0 auto;
-
-	// 	.label {
-	// 		min-width: 60px;
-	// 	}
-
-	// 	.input-group {
-	// 		max-width: 500px;
-	// 		padding: 20px 0;
-	// 		width: 80%;
-	// 		position: relative;
-	// 		margin: 0 auto;
-	// 		display: flex;
-	// 		align-items: center;
-
-	// 		.input-container {
-	// 			display: inline-block;
-	// 			width: 100%;
-	// 			text-align: left;
-	// 			margin-left: 10px;
-	// 		}
-
-	// 		.icon {
-	// 			width: 30px;
-	// 			height: 30px;
-	// 		}
-
-	// 		.input {
-	// 			position: relative;
-	// 			z-index: 2;
-	// 			float: left;
-	// 			width: 100%;
-	// 			margin-bottom: 0;
-	// 			box-shadow: none;
-	// 			border-top: 0px solid #ccc;
-	// 			border-left: 0px solid #ccc;
-	// 			border-right: 0px solid #ccc;
-	// 			border-bottom: 1px solid #ccc;
-	// 			padding: 0px;
-	// 			resize: none;
-	// 			border-radius: 0px;
-	// 			display: block;
-	// 			width: 100%;
-	// 			height: 34px;
-	// 			padding: 6px 12px;
-	// 			font-size: 14px;
-	// 			line-height: 1.42857143;
-	// 			color: #555;
-	// 			background-color: #fff;
-	// 		}
-
-	// 	}
-	// }
 
 	.nk-navigation {
 		margin-top: 15px;
 
 		a {
-			display: inline-block;
-			color: #fff;
+      color: #fff;
 			background: rgba(255, 255, 255, .2);
 			width: 100px;
 			height: 50px;
@@ -288,8 +179,7 @@ export default {
 		margin-top: 10px;
 
 		a {
-			display: inline-block;
-			color: #fff;
+      color: #fff;
 			max-width: 500px;
 			height: 50px;
 			border-radius: 30px;
@@ -311,7 +201,7 @@ export default {
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
-    				background-image: url(http://codegen.caihongy.cn/20201206/eaa69c2b4fa742f2b5acefd921a772fc.jpg);
+    				background-image: url(../assets/img/bg.jpg);
 		    
 		.login-form {
 			right: 50%;
