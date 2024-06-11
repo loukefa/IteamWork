@@ -188,7 +188,7 @@ export default {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-      background-image: url(../assets/img/bg.jpg);
+  background-image: url(../assets/img/bg.jpg);
     
 
   .loginInBt {
