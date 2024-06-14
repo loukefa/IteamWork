@@ -28,6 +28,6 @@
 		top: 0;
 		left: 0;
 		bottom: 0;
-    background-image: url(../assets/img/1.jpg);
+
   }
 </style>

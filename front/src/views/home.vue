@@ -8,7 +8,6 @@ import router from '@/router/router-static'
 export default {
 	data() {
 		return {
-			
 		};
 	},
   mounted(){
@@ -42,7 +41,7 @@ export default {
   height: 100%;
   min-height: 500px;
   text-align: center;
-  background: transparent;
+  background: transparent ;
   .main-text{
     font-size: 38px;
     font-weight: bold;

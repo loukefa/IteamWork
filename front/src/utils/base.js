@@ -9,7 +9,7 @@ const base = {
     },
     getProjectName(){
         return {
-            projectName: "工厂车间管理系统的设计与实"
+            projectName: "工厂车间管理系统"
         } 
     }
 }
