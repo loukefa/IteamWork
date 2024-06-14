@@ -19,7 +19,7 @@
 		}
 	}
 </script>
-
+// Below is the code of /front/src/components/index/IndexHeader.vue
 <style lang="scss" scoped>
 	// 铺满全屏
 	.el-container {
