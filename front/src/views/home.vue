@@ -1,6 +1,6 @@
 <template>
 <div class="content">
-			<div class="text main-text">欢迎使用 {{this.$project.projectName}}</div>
+			<div class="text main-text">欢迎使用 {{this.$project.projectName}} ！！！</div>
 	</div>
 </template>
 <script>
