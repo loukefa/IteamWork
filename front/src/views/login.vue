@@ -5,7 +5,7 @@
       <div :class="1 == 1 ? 'left' : 1 == 2 ? 'left center' : 'left right'">
         <el-form class="login-form" label-position="center" :label-width="2 == 3 || 2 == 2 ? '80px': '30px'">
             <div class="title-container">
-              <h3 class="title">工厂车间管理系统的设计与实登录</h3>
+              <h3 class="title">工厂车间管理系统</h3>
             </div>
           <el-form-item :style='{"padding":"0","boxShadow":"0 0 6px rgba(0,0,0,0)","margin":"0 0 12px 0","borderColor":"rgba(0,0,0,0)","backgroundColor":"rgba(0,0,0,0)","borderRadius":"0","borderWidth":"0","width":"100%","borderStyle":"solid","height":"auto"}' :label="2 == 3 ? '用户名' : ''" :class="'style'+2">
             <span v-if="2 !== 3" class="svg-container" style="
@@ -241,17 +241,17 @@ export default {
       position: absolute;
       left: 25%;
       top: 0;
-    box-sizing: border-box;
-    width: 500px;
-    height: auto;
-    margin:  10%;
-    padding: 0 3% 0 12px;
-    border-radius: 30px;
-    border-width: 10px;
-    border-style: solid;
-    border-color: rgba(171, 214, 229, 1);
-    background-color: rgba(229, 242, 249, 1);
-    box-shadow: 2px 2px 2px 2px #D9E7F2;
+      box-sizing: border-box;
+      width: 500px;
+      height: auto;
+      margin:  10%;
+      padding: 0 3% 0 12px;
+      border-radius: 30px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: rgba(171, 214, 229, 1);
+      background-color: rgba(229, 242, 249, 1);
+      box-shadow: 2px 2px 2px 2px #D9E7F2;
 
     .login-form {
       background-color: transparent;
@@ -423,9 +423,9 @@ export default {
         border-radius: 0 4px 4px 0;
         height: 40px;
         overflow: hidden;
-		padding: 0;
-		margin: 0;
-		width: 100px;
+        padding: 0;
+        margin: 0;
+        width: 100px;
         height: 30px;
         line-height: 30px;
         border-radius: 0;
