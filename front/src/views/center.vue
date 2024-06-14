@@ -44,17 +44,17 @@
       </el-col>
       <el-col :span="12">
         <el-form-item   v-if="flag=='renyuan'"  label="邮箱" prop="youxiang">
-          <el-input v-model="ruleForm.youxiang"               placeholder="邮箱" clearable></el-input>
+          <el-input v-model="ruleForm.youxiang" placeholder="邮箱" clearable></el-input>
         </el-form-item>
       </el-col>
       <el-col :span="12">
         <el-form-item   v-if="flag=='renyuan'"  label="手机" prop="shouji">
-          <el-input v-model="ruleForm.shouji"               placeholder="手机" clearable></el-input>
+          <el-input v-model="ruleForm.shouji"   placeholder="手机" clearable></el-input>
         </el-form-item>
       </el-col>
       <el-col :span="12">
         <el-form-item   v-if="flag=='renyuan'"  label="人员类型" prop="renyuanleixing">
-          <el-input v-model="ruleForm.renyuanleixing"               placeholder="人员类型" clearable></el-input>
+          <el-input v-model="ruleForm.renyuanleixing" placeholder="人员类型" clearable></el-input>
         </el-form-item>
       </el-col>
       <el-form-item v-if="flag=='users'" label="用户名" prop="username">
