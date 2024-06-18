@@ -645,33 +645,33 @@ export default {
   .tables {
 	& ::v-deep .el-button--success {
 		height: 40px;
-		color: rgba(173, 215, 230, 1);
+		color: rgb(212, 215, 222);
 		font-size: 14px;
 		border-width: 3px;
 		border-style: solid;
-		border-color: rgba(173, 215, 230, 1);
+		border-color: rgb(212, 215, 222);
 		border-radius: 40px;
 		background-color: #fff;
-	}
+	}#D4D7DE
 	
 	& ::v-deep .el-button--primary {
 		height: 40px;
-		color: rgba(173, 215, 230, 1);
+		color: rgb(212, 215, 222);
 		font-size: 14px;
 		border-width: 3px;
 		border-style: solid;
-		border-color: rgba(173, 215, 230, 1);
+		border-color: rgb(212, 215, 222);
 		border-radius: 40px;
 		background-color: #fff;
 	}
 	
 	& ::v-deep .el-button--danger {
 		height: 40px;
-		color: rgba(173, 215, 230, 1);
+		color: rgb(212, 215, 222);
 		font-size: 14px;
 		border-width: 3px;
 		border-style: solid;
-		border-color: rgba(173, 215, 230, 1);
+		border-color: rgb(212, 215, 222);
 		border-radius: 40px;
 		background-color: #fff;
 	}
