@@ -2,8 +2,8 @@
   <div>
         <div class="container loginIn">
 
-      <div :class="1 == 1 ? 'left' : 1 == 2 ? 'left center' : 'left right'">
-        <el-form class="login-form" label-position="center" :label-width="2 == 3 || 2 == 2 ? '80px': '30px'">
+      <div :class="1 === 1 ? 'left' : 1 === 2 ? 'left center' : 'left right'">
+        <el-form class="login-form" label-position="center" :label-width="2 === 3 || 2 === 2 ? '80px': '30px'">
             <div class="title-container">
               <h3 class="title">工厂车间管理系统</h3>
             </div>
@@ -44,7 +44,7 @@
               :label="item.roleName"
             >{{item.roleName}}</el-radio>
           </el-form-item>
-          <el-button type="primary" @click="login()" class="loginInBt">{{'1' == '1' ? '登录' : 'login'}}</el-button>
+          <el-button type="primary" @click="login()" class="loginInBt">{{ '1' === '1' ? '登录' : 'login' }}</el-button>
           <el-form-item class="setting">
             <div class="register" @click="register('renyuan')">注册</div>
             <!-- <div style="color:${template2.back.login.loginInSettingFontColor}" class="reset">修改密码</div> -->
@@ -117,12 +117,12 @@ export default {
         return;
       }
       if (!this.rulesForm.role) {
-         this.$message.error("请选择角色");
+         this.$message.error("请选择你的职位！");
         return;
       }
       let menus = this.menus;
       for (let i = 0; i < menus.length; i++) {
-        if (menus[i].roleName == this.rulesForm.role) {
+        if (menus[i].roleName === this.rulesForm.role) {
           this.tableName = menus[i].tableName;
         }
       }
